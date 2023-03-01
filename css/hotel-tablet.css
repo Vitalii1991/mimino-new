@@ -101,6 +101,9 @@
 
   /*------ Hotel Triple ------*/
 
+  .hotel-room.triple {
+    padding-bottom: 80px;
+  }
   .hotel-room-list.triple {
     flex-direction: row;
   }

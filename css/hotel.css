@@ -126,6 +126,8 @@ p {
 .hotel-photo-slider {
   position: relative;
 
+  transition: all 250ms linear;
+
   width: 790px;
   display: flex;
   gap: 20px;
@@ -219,9 +221,12 @@ p {
 
 /*------ Hotel Triple ------*/
 
-.hotel-triple.section {
-  background-color: #f7f7f7;
-}
 .hotel-triple > .container {
   padding-left: 19px;
+}
+
+/*------ Hotel Four ------*/
+
+.hotel-room-title.four {
+  max-width: 100%;
 }
