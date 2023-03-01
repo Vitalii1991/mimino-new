@@ -53,24 +53,24 @@
 
   /*------ Hotel Double ------*/
 
-  .hotel-double.section {
+  .hotel-room.double {
     padding-bottom: 80px;
   }
-  .hotel-double > .container {
+  .hotel-room > .container {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .hotel-double-list {
+  .hotel-room-list {
     position: relative;
     gap: 32px;
     flex-direction: row-reverse;
   }
-  .hotel-double-item:last-child {
+  .hotel-room-item.double {
     position: absolute;
-    top: 293px;
-    left: 2px;
+    bottom: 0;
+    left: 0;
   }
-  .hotel-double-title {
+  .hotel-room-title {
     max-width: 100%;
 
     font-size: 40px;
@@ -82,10 +82,10 @@
     flex-direction: row;
     gap: 32px;
   }
-  .hotel-double-text:not(:last-child) {
+  .hotel-room-text:not(:last-child) {
     max-width: 369px;
   }
-  .hotel-double-text {
+  .hotel-room-text {
     font-size: 18px;
     line-height: 1.33;
   }
@@ -93,9 +93,23 @@
     gap: 14px;
     justify-content: end;
   }
-  .hotel-double-btn {
+  .hotel-room-btn {
     padding: 8px 24px;
 
     line-height: 1.33;
+  }
+
+  /*------ Hotel Triple ------*/
+
+  .hotel-room-list.triple {
+    flex-direction: row;
+  }
+  .hotel-room-item.triple {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .hotel-btn-list.triple {
+    justify-content: start;
   }
 }
