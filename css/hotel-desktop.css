@@ -1,0 +1,83 @@
+@media screen and (min-width: 1440px) {
+  /*------ Hotel Hero ------*/
+
+  .container {
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .hotel-hero .container {
+    padding-left: 32px;
+  }
+  .container-hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .container-hotel-title {
+    margin-bottom: 0;
+  }
+  .hotel-hero-title {
+    font-size: 90px;
+  }
+  .hotel-hero-btn {
+    padding: 9px 24px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .hotel-hero-slider {
+    width: 703px;
+    margin-bottom: 0;
+  }
+  .container-btn {
+    margin-right: 599px;
+  }
+  .hotel-hero-text {
+    bottom: 48px;
+    left: 32px;
+  }
+  .hotel-hero-btn:is(:hover, :focus) {
+    color: #f7f7f7;
+    background-color: var(--dark);
+  }
+
+  /*------ Hotel Double ------*/
+
+  .hotel-double > .container {
+    position: relative;
+  }
+  .hotel-double-list {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .hotel-double-item:last-child {
+    position: static;
+  }
+  .hotel-double-item:nth-child(2) {
+    order: -1;
+  }
+  .text-container {
+    max-width: 694px;
+    margin-bottom: 0;
+  }
+  .hotel-double-text:not(:last-child) {
+    max-width: 355px;
+  }
+  .hotel-btn-list {
+    max-width: 340px;
+    position: absolute;
+    right: 32px;
+    bottom: 224px;
+  }
+  .hotel-double-btn {
+    padding: 9px 24px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .hotel-double-btn:is(:hover, :focus) {
+    color: #f7f7f7;
+    background-color: var(--dark);
+  }
+}
