@@ -123,6 +123,10 @@ p {
 .hotel-hero-btn {
   padding: 8px 18px;
 }
+.hotel-hero-btn:is(:hover, :focus) {
+  color: var(--light);
+  background-color: var(--dark);
+}
 .hotel-hero-slider {
   width: 355px;
   margin-bottom: 24px;
@@ -201,6 +205,10 @@ p {
 
   display: block;
 }
+.hotel-room-btn:is(:hover, :focus) {
+  color: var(--light);
+  background-color: var(--dark);
+}
 
 /*------ Hotel Triple ------*/
 
@@ -212,4 +220,51 @@ p {
 
 .hotel-room-title.four {
   max-width: 100%;
+}
+
+/*------ Hotel Four ------*/
+
+.footer-room {
+  height: 93px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+.footer-room > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-title {
+  margin-bottom: 3px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+}
+.footer-room-suptitle {
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 14px;
+}
+.footer-soc-link > svg {
+  width: 20px;
+  height: 20px;
+
+  transition: stroke 250ms linear,
+  background-color 250ms linear;
+
+  border-radius: 6px;
+  fill: none;
+  stroke: var(--dark);
+}
+.footer-soc-link:is(:hover, :focus) > svg {
+  stroke: var(--light);
+  background-color: var(--dark);
 }

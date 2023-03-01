@@ -1,13 +1,13 @@
 @media screen and (min-width: 768px) {
-
-  /*------ Hotel Hero ------*/
-
   .container {
     max-width: 768px;
   }
-  .hotel-hero.section {
-    padding-bottom: 100px;
+  .section {
+    padding-bottom: 80px;
   }
+
+  /*------ Hotel Hero ------*/
+
   .hotel-hero > .container {
     position: relative;
     padding-left: 36px;
@@ -53,9 +53,6 @@
 
   /*------ Hotel Double ------*/
 
-  .hotel-room.double {
-    padding-bottom: 80px;
-  }
   .hotel-room > .container {
     padding-left: 32px;
     padding-right: 32px;
@@ -101,9 +98,6 @@
 
   /*------ Hotel Triple ------*/
 
-  .hotel-room.triple {
-    padding-bottom: 80px;
-  }
   .hotel-room-list.triple {
     flex-direction: row;
   }
@@ -114,5 +108,20 @@
   }
   .hotel-btn-list.triple {
     justify-content: start;
+  }
+
+  /*------ Hotel Four ------*/
+
+  .footer-room {
+    height: 101px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 48px;
+  
+    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  }
+  .footer-soc-link > svg {
+    width: 24px;
+    height: 24px;
   }
 }

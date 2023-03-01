@@ -38,10 +38,6 @@
     bottom: 48px;
     left: 32px;
   }
-  .hotel-hero-btn:is(:hover, :focus) {
-    color: var(--light);
-    background-color: var(--dark);
-  }
 
   /*------ Hotel Double ------*/
 
@@ -75,10 +71,6 @@
     padding: 9px 24px;
     font-size: 18px;
     line-height: 1.33;
-  }
-  .hotel-room-btn:is(:hover, :focus) {
-    color: var(--light);
-    background-color: var(--dark);
   }
 
   /*------ Hotel Triple ------*/
