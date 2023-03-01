@@ -39,7 +39,7 @@
     left: 32px;
   }
   .hotel-hero-btn:is(:hover, :focus) {
-    color: #f7f7f7;
+    color: var(--light);
     background-color: var(--dark);
   }
 
@@ -77,7 +77,7 @@
     line-height: 1.33;
   }
   .hotel-room-btn:is(:hover, :focus) {
-    color: #f7f7f7;
+    color: var(--light);
     background-color: var(--dark);
   }
 

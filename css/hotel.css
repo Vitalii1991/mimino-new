@@ -3,10 +3,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
+h6 {
+  margin: 0;
+}
 body {
   margin: 0;
+
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 ul {
   margin: 0;
@@ -17,8 +25,18 @@ a {
   color: currentColor;
   text-decoration: none;
 }
-button {
+.btn {
   cursor: pointer;
+  
+  background-color: transparent;
+  border: 0.8px solid var(--dark);
+  border-radius: 32px;
+
+  transition: color 250ms linear, background-color 250ms linear;
+
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 img {
   display: block;
@@ -32,14 +50,16 @@ span {
   padding-bottom: 64px;
   padding-left: 0;
 
-  background-color: #f7f7f7;
+  background-color: var(--light);
 }
 p {
-    text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 :root {
   --dark: #121212;
+  --light: #f7f7f7;
 }
 .container {
   max-width: 375px;
@@ -91,7 +111,6 @@ p {
 .hotel-hero-title {
   margin-bottom: 24px;
 
-  color: var(--dark);
   font-weight: 400;
   font-size: 40px;
   line-height: 1;
@@ -103,19 +122,6 @@ p {
 }
 .hotel-hero-btn {
   padding: 8px 18px;
-
-  background-color: transparent;
-  border: 0.8px solid var(--dark);
-  border-radius: 32px;
-
-  transition: color 250ms linear, background-color 250ms linear;
-
-  color: var(--dark);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
 }
 .hotel-hero-slider {
   width: 355px;
@@ -150,12 +156,6 @@ p {
 }
 .hotel-text.hero {
   max-width: 335px;
-
-  color: var(--dark);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: 0.05em;
 }
 
 /*------ Hotel Double ------*/
@@ -173,12 +173,11 @@ p {
   max-width: 240px;
   margin-bottom: 32px;
 
-  color: var(--dark);
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  
 }
 .text-container {
   max-width: 335px;
@@ -188,10 +187,6 @@ p {
   gap: 24px;
 }
 .hotel-room-text {
-  color: var(--dark);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -203,20 +198,8 @@ p {
 }
 .hotel-room-btn {
   padding: 8px 18px;
+
   display: block;
-
-  background-color: transparent;
-  border: 0.8px solid var(--dark);
-  border-radius: 32px;
-
-  transition: color 250ms linear, background-color 250ms linear;
-
-  color: var(--dark);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
 }
 
 /*------ Hotel Triple ------*/
