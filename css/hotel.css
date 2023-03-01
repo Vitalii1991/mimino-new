@@ -26,7 +26,7 @@ img {
 span {
   font-style: italic;
 }
-section {
+.section {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 64px;
@@ -146,7 +146,7 @@ p {
   fill: none;
   stroke: var(--dark);
 }
-.hotel-hero-text {
+.hotel-text.hero {
   max-width: 335px;
 
   color: var(--dark);
@@ -218,4 +218,13 @@ p {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+/*------ Hotel Triple ------*/
+
+.hotel-triple.section {
+  background-color: #f7f7f7;
+}
+.hotel-triple > .container {
+  padding-left: 19px;
 }
