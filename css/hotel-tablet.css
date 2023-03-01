@@ -106,19 +106,16 @@
     bottom: 0;
     right: 0;
   }
-  .hotel-btn-list.triple {
-    justify-content: start;
-  }
 
-  /*------ Hotel Four ------*/
+  /*------ Footer ------*/
 
   .footer-room {
     height: 101px;
     padding-top: 32px;
-    padding-bottom: 32px;
     margin-bottom: 48px;
-  
-    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  }
+  .footer-soc-list {
+    gap: 16px;
   }
   .footer-soc-link > svg {
     width: 24px;

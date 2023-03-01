@@ -1,3 +1,7 @@
+:root {
+  --dark: #121212;
+  --light: #f7f7f7;
+}
 h1,
 h2,
 h3,
@@ -55,11 +59,6 @@ span {
 p {
   margin: 0;
   text-transform: uppercase;
-}
-
-:root {
-  --dark: #121212;
-  --light: #f7f7f7;
 }
 .container {
   max-width: 375px;
@@ -222,7 +221,7 @@ p {
   max-width: 100%;
 }
 
-/*------ Hotel Four ------*/
+/*------ Footer ------*/
 
 .footer-room {
   height: 93px;
@@ -231,10 +230,14 @@ p {
   margin-bottom: 32px;
 
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  background-color: var(--light);
 }
 .footer-room > .container {
   display: flex;
   justify-content: space-between;
+}
+.footer-menu-list {
+  display: none;
 }
 .footer-title {
   margin-bottom: 3px;

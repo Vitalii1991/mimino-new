@@ -84,4 +84,20 @@
   .hotel-btn-list.four {
     bottom: 128px;
   }
+
+  /*------ Footer ------*/
+
+  .footer-room {
+    height: 161px;
+    padding-top: 44px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+  .footer-menu-list {
+    display: flex;
+    gap: 32px;
+  }
+  .footer-title-container {
+    text-align: center;
+  }
 }
