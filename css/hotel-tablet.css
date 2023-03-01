@@ -107,6 +107,12 @@
     right: 0;
   }
 
+  /*------ Hotel Four ------*/
+
+  .hotel-room-text.four {
+    max-width: 475px;
+  }
+
   /*------ Footer ------*/
 
   .footer-room {

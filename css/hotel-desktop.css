@@ -75,14 +75,21 @@
 
   /*------ Hotel Triple ------*/
 
+  .hotel-room-title.triple {
+    align-items: end;
+  }
+  .text-container {
+    margin-left: auto;
+  }
   .hotel-btn-list.triple {
     bottom: 152px;
+    left: 0;
   }
 
   /*------ Hotel Four ------*/
 
   .hotel-btn-list.four {
-    bottom: 128px;
+    bottom: 176px;
   }
 
   /*------ Footer ------*/
