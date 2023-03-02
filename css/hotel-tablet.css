@@ -121,14 +121,14 @@
     padding-top: 32px;
     padding-bottom: 48px;
   }
-  .footer-soc-list {
+  .soc-list {
     gap: 16px;
     height: 24px;
   }
-  .footer-soc-link {
+  .soc-link {
     height: 24px;
   }
-  .footer-soc-link > svg {
+  .soc-link > svg {
     width: 24px;
     height: 24px;
   }

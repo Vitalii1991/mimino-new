@@ -97,10 +97,14 @@ p {
 .header > .container {
   display: flex;
 }
+.soc-list.header {
+  display: none;
+}
 .header-menu-btn {
   width: 28px;
   height: 28px;
 }
+
 .mob-menu-list {
 }
 .header-menu-item {
@@ -115,6 +119,7 @@ p {
 }
 .header-room-suptitle {
 }
+
 
 /*------ Hotel Hero ------*/
 
@@ -278,16 +283,16 @@ p {
   line-height: 1.25;
   letter-spacing: 0.18em;
 }
-.footer-soc-list {
+.soc-list {
   display: flex;
   gap: 14px;
   height: 20px;
 }
-.footer-soc-link {
+.soc-link {
   height: 20px;
   display: block;
 }
-.footer-soc-link > svg {
+.soc-link > svg {
   width: 20px;
   height: 20px;
 
@@ -297,7 +302,7 @@ p {
   fill: none;
   stroke: var(--dark);
 }
-.footer-soc-link:is(:hover, :focus) > svg {
+.soc-link:is(:hover, :focus) > svg {
   stroke: var(--light);
   background-color: var(--dark);
 }
