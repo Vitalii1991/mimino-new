@@ -1,6 +1,8 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .section {
     padding-bottom: 80px;
@@ -11,6 +13,7 @@
   .hotel-hero > .container {
     position: relative;
     padding-left: 36px;
+    padding-right: 0;
     padding-bottom: 48px;
   }
   .container-hotel-title {
@@ -55,7 +58,6 @@
 
   .hotel-room > .container {
     padding-left: 32px;
-    padding-right: 32px;
   }
   .hotel-room-list {
     position: relative;
@@ -79,8 +81,8 @@
     flex-direction: row;
     gap: 32px;
   }
-  .hotel-room-text:not(:last-child) {
-    max-width: 369px;
+  .hotel-room-text:first-child {
+    max-width: 362px;
   }
   .hotel-room-text {
     font-size: 18px;
@@ -115,10 +117,9 @@
 
   /*------ Footer ------*/
 
-  .footer-room {
-    height: 101px;
+  .footer {
     padding-top: 32px;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
   }
   .footer-soc-list {
     gap: 16px;

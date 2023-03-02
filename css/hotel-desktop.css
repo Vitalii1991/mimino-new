@@ -3,11 +3,9 @@
 
   .container {
     max-width: 1440px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .hotel-hero .container {
-    padding-left: 32px;
+    padding-right: 0;
   }
   .container-hotel {
     display: flex;
@@ -58,8 +56,11 @@
     max-width: 694px;
     margin-bottom: 0;
   }
-  .hotel-room-text:not(:last-child) {
-    max-width: 355px;
+  .hotel-room-text {
+    max-width: 299px;
+  }
+  .hotel-room-text:first-child {
+    max-width: 349px;
   }
   .hotel-btn-list {
     max-width: 340px;
@@ -93,14 +94,19 @@
   .hotel-btn-list.four {
     bottom: 176px;
   }
+  .hotel-room-text.four {
+    max-width: 475px;
+  }
 
   /*------ Footer ------*/
 
-  .footer-room {
-    height: 161px;
+  .footer {
     padding-top: 44px;
     padding-bottom: 80px;
-    margin-bottom: 80px;
+  }
+  .footer-content-wrapper {
+    height: 117px;
+    padding-bottom: 80px;
   }
   .footer-menu-list {
     display: flex;
