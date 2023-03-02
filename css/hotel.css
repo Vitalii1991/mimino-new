@@ -152,6 +152,8 @@ p {
 .btn-slider {
   padding: 0;
 
+  cursor: pointer;
+
   background-color: transparent;
   border: none;
   fill: none;
@@ -255,6 +257,11 @@ p {
 .footer-soc-list {
   display: flex;
   gap: 14px;
+  height: 20px;
+}
+.footer-soc-link {
+  height: 20px;
+  display: block;
 }
 .footer-soc-link > svg {
   width: 20px;

@@ -106,6 +106,9 @@
     display: flex;
     gap: 32px;
   }
+  .footer-menu-link {
+    padding-bottom:18px;
+  }
   .footer-title-container {
     text-align: center;
   }
