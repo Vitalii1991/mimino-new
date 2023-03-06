@@ -78,6 +78,9 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .modal-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -88,80 +91,108 @@ p {
 /*------ Header ------*/
 
 .header {
-  height: 78px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 .header > .container {
   display: flex;
+  align-items: center;
 }
 .soc-list.header {
   display: none;
 }
-.header-menu-btn {
+.open-menu-btn {
   width: 28px;
   height: 28px;
-}
+  padding: 0;
 
+  background-color: transparent;
+  border: none;
+  stroke: var(--dark);
+}
+.header-title-container {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-title {
+  margin-bottom: 3px;
+
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+}
+.header-room-suptitle {
+  font-size: 8px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+}
 
 /*------ Mob Menu ------*/
 
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
 
-  width: 100vw;
+  transform: translateX(0);
+  transition: transform 500ms linear;
+
+  width: 100%;
   height: 100vh;
 
   background-color: var(--dark);
 }
-.mob-container {
-  min-width: 375px;
-  height: 100vh;
-  padding-bottom: 24px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.mob-menu.is-hidden {
+  transform: translateX(100%);
 }
 .mob-menu-header {
   display: flex;
   align-items: center;
 
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 27px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 20px;
 
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 .mob-menu-close {
   width: 28px;
   height: 28px;
-  margin-right: 90px;
+  margin-right: -48px;
   padding: 0;
 
-  border: none;
   stroke: var(--light);
+  background-color: transparent;
+  border: none;
 }
 .mob-title-container {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
-.mob-title-link {
+.menu-open.header-title-link {
   color: var(--light);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57;
-  letter-spacing: 0.18em;
 }
-.mob-room-suptitle {
+.menu-open.header-room-suptitle {
   color: var(--light);
-  font-weight: 400;
-  font-size: 6px;
-  line-height: 1.33;
-  letter-spacing: 0.18em;
+}
+.mob-container {
+  height: calc(100vh - 90px);
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 128px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mob-menu-list {
   display: flex;
@@ -176,9 +207,6 @@ p {
 .mob-menu-link {
   color: var(--light);
   line-height: 1.33;
-}
-.mob-soc-cont {
-  padding-left: 20px;
 }
 .soc-list.mob {
   gap: 19px;
