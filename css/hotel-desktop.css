@@ -1,9 +1,16 @@
 @media screen and (min-width: 1440px) {
-  /*------ Hotel Hero ------*/
-
   .container {
     max-width: 1440px;
   }
+
+  /*------ Header ------*/
+
+  .open-menu-btn {
+    display: none;
+  }
+
+  /*------ Hotel Hero ------*/
+
   .hotel-hero .container {
     padding-right: 0;
   }

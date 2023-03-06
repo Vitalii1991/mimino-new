@@ -108,6 +108,8 @@ p {
   height: 28px;
   padding: 0;
 
+  cursor: pointer;
+
   background-color: transparent;
   border: none;
   stroke: var(--dark);
@@ -164,6 +166,8 @@ p {
   height: 28px;
   margin-right: -48px;
   padding: 0;
+
+  cursor: pointer;
 
   stroke: var(--light);
   background-color: transparent;
