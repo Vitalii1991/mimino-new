@@ -134,7 +134,7 @@ p {
   line-height: 1.33;
   letter-spacing: 0.18em;
 }
-.soc-list.header {
+.soc-list.head {
   display: none;
 }
 
@@ -161,8 +161,8 @@ p {
   display: flex;
   align-items: center;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 20px;
 
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
@@ -184,11 +184,12 @@ p {
   height: 28px;
 }
 .mob-title-container {
+  min-height: 38px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
-.soc-list.mob.header {
+.soc-list.mob.head {
   display: none;
 }
 .menu-open.header-title-link {
@@ -198,7 +199,7 @@ p {
   color: var(--light);
 }
 .mob-container {
-  height: calc(100vh - 82px);
+  height: calc(100vh - 79px);
 
   margin-right: auto;
   margin-left: auto;
@@ -223,6 +224,7 @@ p {
 }
 .mob-menu-link {
   color: var(--light);
+  font-size: 18px;
   line-height: 1.33;
 }
 .soc-list.mob {
@@ -398,23 +400,17 @@ p {
 .soc-list {
   display: flex;
   gap: 14px;
-  height: 20px;
 }
 .soc-link {
   height: 20px;
   display: block;
 }
 .soc-link > svg {
+  display: inline-flex;
   width: 20px;
   height: 20px;
-
-  transition: stroke 250ms linear, background-color 250ms linear;
 
   border-radius: 6px;
   fill: none;
   stroke: var(--dark);
-}
-.soc-link:is(:hover, :focus) > svg {
-  stroke: var(--light);
-  background-color: var(--dark);
 }

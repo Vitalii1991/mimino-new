@@ -34,7 +34,7 @@
     font-size: 8px;
     line-height: 1.25;
   }
-  .soc-list.header {
+  .soc-list.head {
     display: flex;
     align-items: center;
     gap: 21px;
@@ -43,13 +43,9 @@
   /*------ Mob Menu ------*/
 
   .mob-menu-header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 
-    padding-top: 20px;
     padding-right: 32px;
-    padding-bottom: 20px;
     padding-left: 32px;
   }
   .mob-menu-close {
@@ -58,20 +54,17 @@
     margin-right: 0;
   }
   .mob-menu-close > svg {
-    display: inline-flex;
     width: 32px;
     height: 32px;
   }
   .mob-title-container {
     margin-right: 0;
-    margin-left: 0;
-    text-align: center;
     margin-left: 69px;
   } 
-  .soc-list.mob.header {
+  .soc-list.mob.head {
     display: flex;
   }
-  .soc-list.mob.header svg {
+  .soc-list.mob.head svg {
     stroke: var(--light);
   }
   .mob-container {
@@ -206,10 +199,10 @@
     padding-bottom: 48px;
   }
   .soc-list {
-    gap: 16px;
-    height: 24px;
+    gap: 21px;
   }
   .soc-link {
+    width: 24px;
     height: 24px;
   }
   .soc-link > svg {
