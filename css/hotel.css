@@ -377,6 +377,7 @@ p {
 .footer-container-wrap > .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-menu-list {
   display: none;
