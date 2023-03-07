@@ -8,6 +8,13 @@
   .open-menu-btn {
     display: none;
   }
+  .header-title-container {
+    margin-right: 128px;
+    margin-left: 0;
+  }
+  .soc-list.header {
+    gap: 23px;
+  }
 
   /*------ Hotel Hero ------*/
 

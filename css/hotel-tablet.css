@@ -8,6 +8,90 @@
     padding-bottom: 80px;
   }
 
+  /*------ Header ------*/
+
+  .header > .container {
+    justify-content: space-between;
+  }
+  .open-menu-btn {
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+  }
+  .open-menu-btn > svg {
+    width: 32px;
+    height: 32px;
+  }
+  .header-title-container {
+    margin-right: 0;
+    margin-left: 71px;
+  }
+  .header-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .header-room-suptitle {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  .soc-list.header {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  /*------ Mob Menu ------*/
+
+  .mob-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+  }
+  .mob-menu-close {
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+  }
+  .mob-menu-close > svg {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+  }
+  .mob-title-container {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-left: 69px;
+  } 
+  .soc-list.mob.header {
+    display: flex;
+  }
+  .soc-list.mob.header svg {
+    stroke: var(--light);
+  }
+  .mob-container {
+    padding-top: 240px;
+  }
+  .mob-menu-list {
+    max-width: 155px;
+  }
+  .mob-menu-link {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .mob-menu-item:last-child > .mob-menu-link {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  .soc-list.mob {
+    display: none;
+  }
+
   /*------ Hotel Hero ------*/
 
   .hotel-hero > .container {

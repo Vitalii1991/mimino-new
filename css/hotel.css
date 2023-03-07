@@ -91,8 +91,8 @@ p {
 /*------ Header ------*/
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
@@ -100,12 +100,10 @@ p {
   display: flex;
   align-items: center;
 }
-.soc-list.header {
-  display: none;
-}
 .open-menu-btn {
   width: 28px;
   height: 28px;
+  margin-right: -28px;
   padding: 0;
 
   cursor: pointer;
@@ -113,6 +111,10 @@ p {
   background-color: transparent;
   border: none;
   stroke: var(--dark);
+}
+.open-menu-btn > svg {
+  width: 28px;
+  height: 28px;
 }
 .header-title-container {
   text-align: center;
@@ -123,13 +125,17 @@ p {
   margin-bottom: 3px;
 
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.57;
   letter-spacing: 0.18em;
 }
 .header-room-suptitle {
-  font-size: 8px;
+  font-size: 6px;
   line-height: 1.33;
   letter-spacing: 0.18em;
+}
+.soc-list.header {
+  display: none;
 }
 
 /*------ Mob Menu ------*/
@@ -173,10 +179,17 @@ p {
   background-color: transparent;
   border: none;
 }
+.mob-menu-close > svg {
+  width: 28px;
+  height: 28px;
+}
 .mob-title-container {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+.soc-list.mob.header {
+  display: none;
 }
 .menu-open.header-title-link {
   color: var(--light);
@@ -185,7 +198,7 @@ p {
   color: var(--light);
 }
 .mob-container {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 82px);
 
   margin-right: auto;
   margin-left: auto;
@@ -216,7 +229,7 @@ p {
   gap: 19px;
 }
 .soc-link.mob > svg {
-  stroke: var(--light)
+  stroke: var(--light);
 }
 
 /*------ Hotel Hero ------*/
